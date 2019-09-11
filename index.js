@@ -14,7 +14,7 @@ app.post('/getMovies', (req, res) => {
     if (respose)
         io.emit('message', { movies: respose.join(', ') });
     else
-        io.emit('message', 'Nothing to respond, try something else');
+        io.emit('message', {movies:'I didn\'t get that, try something else'});
 });
 
 io.on('connection', function (socket) {
