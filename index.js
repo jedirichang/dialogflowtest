@@ -28,5 +28,5 @@ http.listen(3000, function () {
 var movies = {
     'popular': ['IT chapter 2', 'Around the world in 80 Days', 'Blue is the warmest color', 'Mother', 'Mission Impossible', 'Catch me if you can'],
     'rated': ['Fifty shades of grey', 'Max steel', 'Witcher', 'Jobs', 'X-Men', 'Avengers', 'Iron Man']
-},
+}
 // app.listen(3000);
