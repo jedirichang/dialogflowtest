@@ -8,7 +8,7 @@ app.use(bodyparser.json());
 app.use('/view', express.static(path.join(__dirname, 'public')));
 app.post('/getMovies', (req, res) => {
     console.log('here');
-    console.log(req.body.queryResult.parmaters.any);
+    console.log(req.body.queryResult.parameters.any);
     let respose = movies[req.body.queryResult.parmaters.any];
 
     if (respose)
