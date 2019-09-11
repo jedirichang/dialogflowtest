@@ -14,15 +14,16 @@ app.post('/getMovies', (req, res) => {
     if (respose)
         io.emit('message', { movies: respose.join(', ') });
     else
-        io.emit('message', {movies:'I didn\'t get that, try something else'});
+        io.emit('message', { movies: 'I didn\'t get that, try something else' });
 });
 
 io.on('connection', function (socket) {
     console.log('a user connected');
 });
 
-http.listen(process.env.PORT, function () {
-    console.log('listening on ',process.env.PORT);
+// http.listen(process.env.PORT, function () {
+http.listen(3000, function () {
+    console.log('listening on ', process.env.PORT);
 });
 
 

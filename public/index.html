@@ -98,7 +98,10 @@
         data:JSON.stringify(d),
         success: function (data) {
           debugger;
-          console.log('succes: ' + data);
+          if(data.result && data.result.fulfillment.speech)
+          $('#messages').append(data.result.fulfillment.speech);
+          if(data.fullfillment && data.fulfillment.speech)
+          $('#messages').append(data.fulfillment.speech);
         }
       });
       $('#m').val('');
