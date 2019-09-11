@@ -7,6 +7,7 @@ const bodyparser = require('body-parser');
 app.use(bodyparser.json());
 app.use('/view', express.static(path.join(__dirname, 'public')));
 app.post('/getMovies', (req, res) => {
+    console.log('here');
     console.log(req.body.queryResult.parmaters.any);
     let respose = movies[req.body.queryResult.parmaters.any];
 
