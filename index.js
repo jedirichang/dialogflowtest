@@ -5,4 +5,4 @@ app.get('/getMovies',(req,res)=>{
     res.send({'test':'test'});
 });
 
-app.listen(3000);
+app.listen(process.env.PORT);
