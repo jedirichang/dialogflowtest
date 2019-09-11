@@ -1,0 +1,22 @@
+{
+  "name": "dialogflowtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedirichang/dialogflowtest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jedirichang/dialogflowtest/issues"
+  },
+  "homepage": "https://github.com/jedirichang/dialogflowtest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
