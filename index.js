@@ -12,7 +12,7 @@ app.post('/getMovies', (req, res) => {
     let respose = movies[req.body.queryResult.parameters.any];
 
     if (respose)
-        io.emit('message', { movies: respose.join(',') });
+        io.emit('message', { movies: respose.join(', ') });
     else
         io.emit('message', 'Nothing to respond, try something else');
 });
