@@ -5,7 +5,7 @@ var io = require('socket.io')(http);
 const path = require('path');
 const bodyparser = require('body-parser');
 app.use(bodyparser.json());
-app.use('/view', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 app.post('/getMovies', (req, res) => {
     console.log('here');
     console.log(req.body.queryResult.parameters.any);
