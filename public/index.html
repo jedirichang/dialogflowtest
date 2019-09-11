@@ -71,7 +71,7 @@
 <script>
   var socket = io();
   socket.on('message', function (res) {
-    $('#messages').append($('<li>').text(res));
+    $('#messages').append($('<li>').text(res.movies));
   })
 </script>
 <script>
